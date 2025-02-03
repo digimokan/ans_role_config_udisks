@@ -1,0 +1,7 @@
+- name: "Install the main udisks package: '{{ udisks_main_package_name }}'"
+  ansible.builtin.package:
+    name: "{{ udisks_main_package_name }}"
+    state: present
+  become: true
+  become_user: root
+

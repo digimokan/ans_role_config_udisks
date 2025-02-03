@@ -1,0 +1,6 @@
+# list of other device-auto-mounting packages to uninstall (for conflicts)
+udisks_ubuntu_conflict_package_uninstall_list: []
+udisks_freebsd_conflict_package_uninstall_list:
+  - "devd-mount"
+  - "automount"
+

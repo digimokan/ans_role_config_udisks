@@ -1,0 +1,22 @@
+galaxy_info:
+  author: digimokan
+  description: "Install and configure the udisks device-mounting utility"
+  license: "MIT"
+  min_ansible_version: 2.5
+  platforms:
+    - name: Archlinux
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: FreeBSD
+      versions:
+        - all
+  galaxy_tags:
+    - ubuntu
+    - archlinux
+    - freebsd
+    - udisks
+    - udisks2
+

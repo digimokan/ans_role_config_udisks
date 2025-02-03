@@ -1,0 +1,7 @@
+- name: "Uninstall other device auto-mounters"
+  ansible.builtin.include_tasks: uninstall_other/main.yml
+  when: udisks_remove_other_device_auto_mounters
+
+- name: "Create udisks utility script"
+  ansible.builtin.include_tasks: create_util_script/main.yml
+

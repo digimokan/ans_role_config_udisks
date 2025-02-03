@@ -1,0 +1,42 @@
+# main udisks package to install (if empty str, pkg is OS built-in)
+udisks_ubuntu_main_package_name: 'udisks2'
+udisks_archlinux_main_package_name: 'udisks2'
+udisks_freebsd_main_package_name: 'bsdisks'
+
+# package to install to support exfat filesystems
+udisks_ubuntu_exfat_filesystems_package_list:
+  - "exfat-fuse"
+  - "exfat-utils"
+  - "exfatprogs"
+udisks_archlinux_exfat_filesystems_package_list:
+  - "exfat-utils"
+  - "exfatprogs"
+udisks_freebsd_exfat_filesystems_package_list:
+  - "fusefs-exfat"
+  - "exfat-utils"
+
+# package to install to support ntfs filesystems
+udisks_ubuntu_ntfs_filesystems_package: 'ntfs-3g'
+udisks_archlinux_ntfs_filesystems_package: 'ntfs-3g'
+udisks_freebsd_ntfs_filesystems_package: 'fusefs-ntfs'
+
+# package to install to support ext2/ext4 filesystems
+udisks_ubuntu_ext2_ext4_filesystems_package: 'e2fsprogs'
+udisks_archlinux_ext2_ext4_filesystems_package: 'e2fsprogs'
+udisks_freebsd_ext2_ext4_filesystems_package: 'fusefs-ext2'
+
+# package to install to support HFS filesystems
+udisks_ubuntu_hfs_filesystems_package: 'hfsprogs'
+udisks_archlinux_hfs_filesystems_package: 'hfsprogs'
+udisks_freebsd_hfs_filesystems_package: 'fusefs-hfsfuse'
+
+# package to install to support XFS filesystems
+udisks_ubuntu_xfs_filesystems_package: 'xfsprogs'
+udisks_archlinux_xfs_filesystems_package: 'xfsprogs'
+udisks_freebsd_xfs_filesystems_package: 'fusefs-lkl'
+
+# package to install to support MTP filesystems
+udisks_ubuntu_mtp_filesystems_package: 'jmtpfs'
+udisks_archlinux_mtp_filesystems_package: 'mtpfs'
+udisks_freebsd_mtp_filesystems_package: 'fusefs-simple-mtpfs'
+

@@ -1,0 +1,6 @@
+- name: "Install udisks utility and supporting packages"
+  ansible.builtin.include_tasks: install/main.yml
+
+- name: "Configure udisks utility"
+  ansible.builtin.include_tasks: configure/main.yml
+

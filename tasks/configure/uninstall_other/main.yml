@@ -1,0 +1,7 @@
+- name: "Uninstall conflicting device auto-mount packages: '{{ udisks_conflict_package_uninstall_list }}'"
+  ansible.builtin.package:
+    name: "{{ udisks_conflict_package_uninstall_list }}"
+    state: absent
+  become: true
+  become_user: root
+
