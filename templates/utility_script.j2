@@ -185,7 +185,7 @@ handle_device_path() {
   DEVICE_PATH="${1}"
 
   try_silent_with_exit \
-    "test -b ${DEVICE_PATH}" \
+    "test -b ${DEVICE_PATH} || test -c ${DEVICE_PATH}" \
     "\"${DEVICE_PATH}\" must be a block device" 255
 }
 
