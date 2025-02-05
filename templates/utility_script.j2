@@ -13,8 +13,8 @@
 # Constants
 PROG_NAME="$(basename "${0}")"
 readonly PROG_NAME
-UDISKCTL_CMD='{{ udisks_main_cmd }}'
-readonly UDISKCTL_CMD
+UDISKSCTL_CMD='{{ udisks_main_cmd }}'
+readonly UDISKSCTL_CMD
 
 # Mutable User Cmd Option Selections
 PRINT_HELP_MENU='false'
@@ -216,7 +216,7 @@ do_mount_device() {
   check_mount_option
 
   try_silent_print_with_exit \
-    "${UDISKCTL_CMD} mount -b \"${DEVICE_PATH}\"" \
+    "${UDISKSCTL_CMD} mount -b \"${DEVICE_PATH}\"" \
     "mounting device" 10
 }
 
@@ -225,7 +225,7 @@ do_unmount_device() {
   check_unmount_option
 
   try_silent_print_with_exit \
-    "${UDISKCTL_CMD} unmount -b \"${DEVICE_PATH}\"" \
+    "${UDISKSCTL_CMD} unmount -b \"${DEVICE_PATH}\"" \
     "unmounting device" 10
 }
 
