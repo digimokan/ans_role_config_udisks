@@ -1,5 +1,5 @@
 # command to execute to run udisks
-udisks_main_cmd: 'udiskctl'
+udisks_main_cmd: 'udisksctl'
 
 # command to execute to run the udisks utility script (provided by this role)
 udisks_utility_script_cmd: 'do_udisks.sh'
