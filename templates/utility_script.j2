@@ -55,7 +55,7 @@ print_usage() {
 }
 
 get_cmd_opts() {
-  while getopts ':hmuD-:' option; do
+  while getopts ':hmuD:-:' option; do
     short_opt_arg="${OPTARG}"
     case "${option}" in
       h)  handle_print_help_menu ;;
